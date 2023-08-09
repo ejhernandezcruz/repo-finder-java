@@ -9,7 +9,7 @@ Repo Finder is a project to demonstrate end-to-end testing using Selenium, Java 
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17).
+- You must have installed [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17).
 - Make sure you have [Maven](https://maven.apache.org/download.cgi) installed and added to your environment variables
 - The web application against which the end-to-end tests will be run is up. 
 You can find and install the Get GitHub Repo application [here](https://github.com/ejhernandezcruz/qa-automation-coding-challenge)
@@ -18,7 +18,7 @@ You can find and install the Get GitHub Repo application [here](https://github.c
 
 ## Installing the Automation Framework
 
-To install Github Repos, follow these steps:
+To install the project, follow these steps:
 
 ```
 mvn clean install
