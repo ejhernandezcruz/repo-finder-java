@@ -14,7 +14,6 @@ import lombok.Setter;
 @RequiredArgsConstructor
 public class SearchRepoSteps {
 
-    @Getter @Setter
     private String username;
 
     private final SearchPage searchPage;
@@ -22,13 +21,12 @@ public class SearchRepoSteps {
     @Before
     public void setTestData() {
         JsonObject jsonObject = JsonReaderUtil.getJsonObject("userData.json");
-        String username = jsonObject.get("username").getAsString();
-        setUsername(username);
+        this.username = jsonObject.get("username").getAsString();
     }
 
     @When("I type the Github username of a student into the search form")
     public void i_type_the_github_username_of_a_student_into_the_search_form() {
-        searchPage.typeUsername(getUsername());
+        searchPage.typeUsername(this.username);
 
     }
 
